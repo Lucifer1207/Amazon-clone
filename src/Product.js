@@ -18,7 +18,7 @@ const addToBasket=()=>{
       rating:rating,
      },
    });
-
+     
 }
 
   return (
