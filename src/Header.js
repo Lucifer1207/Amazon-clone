@@ -18,7 +18,7 @@ function Header() {
 
   return (
     <div className="header">
-      <Link to="/">
+      <Link to="/Amazon-clone">
        <img className="header__logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="logo" />
        </Link>
        <div className="header__search">
@@ -30,7 +30,7 @@ function Header() {
        <div className="header__nav">
         <Link to={!user && "/login"}>
           <div onClick={handleAuthentication} className="header__option">
-            <span className="header__optionlineOne">Hello , {user.email}</span>
+            <span className="header__optionlineOne">Hello , {user?.email}</span>
             <span className="header__optionlineTwo">{user ? 'Sign Out' : 'Sign In'}</span>
           </div>
         </Link>

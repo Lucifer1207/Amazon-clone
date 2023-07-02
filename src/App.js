@@ -47,7 +47,7 @@ function App() {
 
       <Routes>
 
-      <Route path="/" element={<Home/>}></Route>
+      <Route path="/Amazon-clone" element={<Home/>}></Route>
       <Route path="/Login" element={<Login/>}></Route>
       <Route path="/Checkout" element={<Checkout/>}></Route>
      </Routes>

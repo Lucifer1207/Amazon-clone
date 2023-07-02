@@ -12,7 +12,7 @@ function Login() {
      //some fance firebase login shitttt......
        auth.signInWithEmailAndPassword(email,password).then((auth) => {
         if(auth){
-        history('/');
+        history('/Amazon-clone');
       }
        }).catch(error => alert(error.message));
 
@@ -25,7 +25,7 @@ function Login() {
       auth.createUserWithEmailAndPassword(email,password).then((auth)=>{
         console.log(auth);
         if(auth) {
-          history('/');
+          history('/Amazon-clone');
         }
       })
       .catch(error => alert(error.message))
@@ -33,7 +33,7 @@ function Login() {
 
   return (
     <div className='login'>
-      <Link to="/">
+      <Link to="/Amazon-clone">
          <img className='login__logo' src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo-500x313.png" alt="lg" />
       </Link>
 
