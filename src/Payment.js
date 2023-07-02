@@ -53,7 +53,7 @@ function Payment() {
 
         <div className="payment__section">
             <div className="payment__title">
-                <h3>Payment Methods</h3>
+                <h3>Total Amount To Pay</h3>
             </div>
             <div className="payment__details">
                 
