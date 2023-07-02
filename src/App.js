@@ -7,6 +7,7 @@ import { BrowserRouter as Router , Routes , Route } from "react-router-dom";
 import Login from "./Login";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
+import Payment from "./Payment";
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
       <Routes>
 
       <Route path="/Amazon-clone" element={<Home/>}></Route>
+      <Route path="/payment" element={<Payment/>}></Route>
       <Route path="/Login" element={<Login/>}></Route>
       <Route path="/Checkout" element={<Checkout/>}></Route>
      </Routes>
